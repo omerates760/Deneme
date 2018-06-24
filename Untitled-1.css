@@ -1,0 +1,268 @@
+ @media (min-width:100px) {
+#body {
+	margin: 0px;
+	background:  #000080;
+	font-family: "Ubuntu", sans-serif;;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix {
+	display: inline-block;
+}
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+
+
+
+#header {
+	background:transparent ;
+  	top:0;
+ 	left: 0;
+  	right: 0;
+	width: 100%;
+	height: 200px;
+	
+	
+	position: fixed;
+	
+	transition: all 0.4s ease;
+}
+
+#header.sticky {
+	height: 30px;
+	position: fixed;
+	top:0;
+	background:transparent;
+	
+}
+
+.links{
+	position: absolute;
+	padding: 5px;
+	left:70%;
+	top:0%;
+	color:white;
+	display: inline;
+	padding:5px;
+
+}
+.links.li{
+	position: absolute;
+	left:30%;
+	top:0%;
+	padding: 5px;
+	display: inline;
+	
+
+}
+
+.font{
+	position: absolute;
+	top:45px;
+	font:35px;
+	right: 90%;
+	visibility: hidden;
+	float: left;
+	color: #000080;
+	
+}
+.font.sticky{
+	visibility: visible;
+	top:45px;
+	font:35px;
+	float: left;
+	color: #000080;
+	
+
+}
+
+
+.logo {
+	position: absolute;
+	top:20px;
+	float: left;
+	font-size: 30px;
+    padding: 10px;
+	left: 0%;
+	bottom: 0%;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Oswald", sans-serif;
+	font-weight: 400;
+    transition: all 0.4s ease;
+    
+}
+.logoBrand{
+	background-color: transparent;
+	position: absolute;
+	z-index: 10;
+	right: 20px;
+    bottom: 0;
+	height:  200px;
+	width: 200px;
+	
+    align-items:center;
+    margin: 0 auto;
+	padding:0px;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+.logo.sticky {
+	font-size: 50px;
+    padding: 5px;
+	visibility: hidden;
+	top:0;
+    
+}
+
+.navbar {
+	position: absolute;
+	float: left;
+	background: #969696;
+	width: 100%;
+	height: 75px;
+	top:45px;
+
+	
+	font-size: 20px;
+	padding: 5px;
+	display: inline;
+	
+	text-transform: uppercase;
+	font-family: "Oswald", sans-serif;
+	transition: all 0.4s ease;
+	
+}
+.navbar.sticky {
+	position: absolute;
+	top:0%;
+	display: inline;
+	font-size: 15px;
+	padding: 5px;
+	background: #969696;
+}
+.navbar a {
+	text-decoration: none;
+	color:inherit;
+
+}
+.navbar ul{
+
+position: absolute;
+left:15%;
+bottom: 0;
+display: inline;
+
+
+
+}
+
+
+.navbar li {
+	padding: 5px;
+	left:55%;
+	text-indent: 0;
+	display: inline;
+	color:red;
+	
+	
+	
+}
+.navbar li:hover {
+	border-bottom: 2px solid rgb(29,29,29);
+}
+
+#content {
+	width: auto !important;
+	padding: 20px 20px;
+  margin-top: 130px;
+  visibility: hidden;
+}
+.wrapper {
+    width: 95%;
+    color: #969696;
+    margin: 1px auto 20px auto;
+    overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
+    padding: 6px 10px 10px 10px;
+}
+.main {
+	overflow: hidden;
+	width: 73%;
+	float: left;
+}
+.side {
+	overflow: hidden;
+	width: 25%;
+	float: right;
+}
+
+#footer {
+	background: grey;
+	width: 100%;
+	height: 50px;
+	bottom: 0;
+	margin: 0;
+	border-top: 8px solid #1d1d1d;
+	font-family: "Oswald", sans-serif;
+}
+.credits {
+	float: right;
+	text-transform: uppercase;
+	color: red;
+	font-weight: 700;
+	font-size: 15px;
+	padding: 15px;
+	margin-right: 10px;
+}
+.dropbtn {
+    background-color: transparent;
+    color: red;
+	padding: 5px;
+	font-family: "Oswald", sans-serif;
+	font-size: 20px;
+	transition: all 0.4s ease;
+    border: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #000080;}
+
+
+}
